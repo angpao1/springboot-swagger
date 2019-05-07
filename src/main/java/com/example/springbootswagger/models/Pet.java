@@ -10,14 +10,21 @@ import java.util.Date;
 public class Pet {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @ApiModelProperty(notes = "The database generated product ID")
     private long id;
-    @ApiModelProperty(notes = "Name")
     private String name;
-    @ApiModelProperty(notes = "Application Timestamp when save.")
     private Date create_at;
-    @ApiModelProperty(notes = "Application Timestamp when update")
     private Date update_at;
+
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @ApiModelProperty(notes = "The database generated product ID")
+//    private long id;
+//    @ApiModelProperty(notes = "Name")
+//    private String name;
+//    @ApiModelProperty(notes = "Application Timestamp when save.")
+//    private Date create_at;
+//    @ApiModelProperty(notes = "Application Timestamp when update")
+//    private Date update_at;
 
     public Pet() {
     }

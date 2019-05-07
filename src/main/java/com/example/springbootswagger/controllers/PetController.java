@@ -8,8 +8,8 @@ import io.swagger.annotations.ApiOperation;
 
 import java.util.List;
 
-@RestController
-@RequestMapping(path = "/api/v1", produces = "application/json")
+@RestController("/api/v1")
+//@RequestMapping(path = "/api/v1", produces = "application/json")
 public class PetController {
 
     private final PetService petService;
